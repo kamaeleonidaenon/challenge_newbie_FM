@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+html, body {
+    background: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    color: hsl(218, 44%, 22%);
+}
+
+* {
+    transition: all 0.2s;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.card {
+    background: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 1px 1px 20px hsl(212, 45%, 89%);
+    max-width: 300px;
+}
+.card:hover {
+    max-width: 290px;
+}
+.card:hover>.qrcode {
+    width: 290px;
+    height: 290px;
+}
+
+.qrcode {
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    background-image: url('images/image-qr-code.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.text {
+    width: 260px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+}
+.text>p {
+    color: hsl(220, 15%, 55%);
+    font-weight: 400;
+}
+.title {
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+.attribution a:hover {
+    color: hsl(228, 44%, 25%);
+}
